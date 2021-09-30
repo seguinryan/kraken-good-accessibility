@@ -145,8 +145,8 @@ figcaption {
 }
 
 article footer {
-  background-color: #259f95;
-  background-image: none;
+  /* background-color: #259f95;
+  background-image: none; */
   border-radius: 6px 6px 0 0;
   color: #fff;
 }
@@ -157,4 +157,5 @@ footer {
   padding: 1rem;
   background-image: url("../images/anchors.svg");
   color: #fff;
+  background-color: #1e7c74;
 }
