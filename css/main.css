@@ -30,6 +30,7 @@ header {
   font-style: normal;
   font-weight: normal;
   padding: 1rem;
+  background-color: #1e7c74;
 }
 
 header strong,
@@ -57,6 +58,7 @@ article header {
 }
 
 h1 {
+  display: block;
   margin: 0;
   color: #fff;
   font-weight: normal;
@@ -64,6 +66,7 @@ h1 {
 }
 
 h2 {
+  display: block;
   margin: 0;
   color: #fff;
   font-weight: normal;
@@ -86,14 +89,24 @@ nav a {
   border: 0;
   border-radius: 6px;
   color: #fff;
-  padding: 0.5rem;
+  padding: .5rem;
   width: 2.5rem;
   height: 2.5rem;
 }
 
+nav a:focus {
+  outline: .2rem solid #000;
+  outline-offset: .1rem;
+}
+
+.current,
 nav a:hover,
 nav a:focus {
   background-color: #1e7c74;
+}
+
+.colour {
+  background-color: #259f95;
 }
 
 .icon {
@@ -123,10 +136,11 @@ article div :first-child {
   text-indent: 0;
 }
 
-article div :first-child::first-line {
-  color: #1e7c74;
+/* article div :first-child::first-line {
+  /* color: #1e7c74;
+  color: #FFF;
   font-style: italic;
-}
+} */
 
 figure {
   margin: 1.5rem 0;
